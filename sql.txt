@@ -1,0 +1,16 @@
+use demodb;
+create table stu(
+	id int unsigned not null auto_increment primary key,
+	name varchar(16) not null,
+	sex int(3) unsigned not null,
+	age tinyint(3) unsigned,
+	addtime int unsigned
+)engine=myIsam default charset=utf8;
+
+项目目录结构
+dbconfig.php 数据库配置文件
+menu.php	公共导航栏
+index.php	首页,获取数据库数据并展示
+add.php 	信息添加表单页面
+edit.php	信息修改表单页面
+action.php	信息处理页面,实现页面的增删改
